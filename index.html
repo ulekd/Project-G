@@ -4,23 +4,41 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>Crowther</title>
     <link rel="stylesheet" href="style/style.css">
-
+    <link rel="stylesheet" href="style/mediaqueries.css">
 </head>
 <body>
-    <nav class="navbar">
+    <nav id="desktop-nav">
         <div>
             <ul class="nav-links">
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         <div class="logo">
             <img id="logo-img" src="resources/logo.png" alt="">
         </div>
-        <p class="nav-links">ES</p>
+        <p class="nav-links"><a href="#es">ES</a></p>
         
     </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo"><img id="logo-img" src="resources/logo.png" alt=""></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()" >About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#es" onclick="toggleMenu()">ES</a></li>
+            </div>
+        </div>
+    </nav>
+
     <main>
         <div class="front-page">
             <img id="front-cover" src="resources/front_page_img.jpg" ></div>
